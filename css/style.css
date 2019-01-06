@@ -1,83 +1,17 @@
 /*SCROLL*/
 
 html, body {
-    height: 100%;
     margin: 0;
 }
-#pinContainer {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.panel {
-    height: 100%;
-    width: 100%;
-    position: absolute;
+
+
+section {
+    width: 100vw;
+    position: relative;
     text-align: center;
 }
-.panel .additionalContent {
-    /*top:0;*/
-    /*position: absolute;*/
-}
-.panel .logo {
-    margin-left: -25%;
-}
-.intro {
-    background-color: red;
-    z-index:0;
-}
-.logo {
 
-    z-index:1;
-}
-.one {
-    background-color: black;
-    z-index:2;
-}
-.two {
-    background-color: pink;
-    z-index:3;
-    overflow: hidden;
-}
-.three {
-    background-color: yellow;
-    z-index:4;
-}
-.four {
-    background-color: lightblue;
-    z-index:5;
-}
-.five {
-    background-color: lightpink;
-    z-index:6;
-}
-.pink {
-    z-index:7;
-}
-.six {
-    background-color: black;
-    z-index:8;
-}
-.seven {
-    background-color: orange;
-    z-index:9;
-}
-.eight {
-    background-color: black;
-    z-index:10;
-    overflow: hidden;
-    background-image: url("../media/original.gif");
-
-}
-.nine {
-    background-color: red;
-    z-index:11;
-}
-.ten {
-    background-color: black;
-    z-index:12;
-}
-.panel > b {
+section > b {
     font-size: 15px;
     color: white;
     position: relative;
@@ -87,129 +21,138 @@ html, body {
     top: 50%;
 }
 
-p{
-    color: white;
+.panel {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
 }
 
 
-
-/*
-	SCROLL ANIMATIONS GIF
-*/
-#wrapper {
-	height: 100%;
+.intro {
+    background-color: black;
+    height: 100vh;
 }
 
 
-
-
-
-.spacer.s0 {
-	min-height: 0px;
+/* loog */
+.logo {  
+    z-index: 10;
 }
 
-.spacer.s2 {
-	min-height: 1000px;
+.logo div{
+    width: 800px;
+    height: 500px;
+    background-color: red;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-400px;/* half width*/
+    margin-top:-250px;
+
 }
 
-.spacer.s_viewport {
-	min-height: 100%;
+/*panel 1*/
+.one {
+    background-color: black;
 }
 
-.spacer.s_viewport {
-	min-width: 100%;
+.bg{
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    background-image: url("../media/bg.png");
+    background-size: cover; 
 }
 
-
-#imagesequence {
-    width: 100%;
-    height: auto;
-    margin-top: -76%;
-    margin-left: -40%;
-    position: fixed;
+.oneimg{
+    position: relative;
+    width: 33.33%;
+    margin: 0%;
+    padding: 0%;
+    float: left;
 }
 
-#myimg{
-    width: 40%;
-    margin-left: 0%;
-    margin-top: -60%;
-    height: auto;
+.contraption{
+    position: absolute;
+    width: 20.8vw;
+    margin-left: -47.45vw;
+    margin-top: 5.65vw;
 }
 
-#fimo{
-    width: 30%;
-    margin-top: -40%;
-    height: auto;
-    margin-left: 40%;
-}
-#fimoimg{
-    width: 100%;
-    height: auto;
-    padding: 25%;
+.bielle1{
+    position: absolute;
+    width: 16.3vw;
+    height: 32.1vw;
+    margin-left: 4.8vw;
+    margin-top: 31.1vw;
+    background-image: url("../media/4.jpg");
+    background-size: cover;
 }
 
-#imagesequence2 {
-    margin-top: -1000px;
-    margin-left: -500px;
-    position: fixed;
+.bielle1:hover{
+    background-image: url("../media/5.jpg");
 }
 
-#myimg2{
-    width: 75%;
-    height: auto;
+.plexi1{
+    position: absolute;
+    width: 21vw;
+    height: 15vw;
+    margin-left: -45vw;
+    margin-top: 82.5vw;
 }
 
-
-/*GUN*/
-#bg{
-    width: 100%;
-    padding: 0;
-    
+.bielle2{
+    position: absolute;
+    width: 20.5vw;
+    height: 20.5vw;
+    margin-left: 38vw;
+    margin-top: 5.25vw;
+    background-image: url("../media/bielle2.png");
+    background-size: cover;
 }
 
-.gun{
-    
-    background-size: 100%;
-    padding-bottom: 50%;
-    margin-top: -40%;
-    margin-left: -30%;
-
-    }
-
-
-canvas {
-    position: fixed;
-    padding: 0;
-    width: 100%;
-    }
-
-
-#my-input{
-    position: fixed;
-    margin-top: 23.1%;
-    margin-left: 37%;
-    transform: rotate(-165deg);
-    width: 14%;
-    height: 9%;
-    z-index: 50;
-    opacity: 0;
-    cursor: url("../media/c3b.png") 50 30, auto;
-    }
-
-
- /* (Optional) Apply a "closed-hand" cursor during drag operation. */
-#my-input:active{ 
-    cursor: url("../media/c4b.png") 50 30, auto;
+.bielle3{
+    position: absolute;
+    width: 14vw;
+    height: 21.6vw;
+    margin-left: 40.5vw;
+    margin-top: 59.5vw;
+    background-image: url("../media/bielle3.jpg");
+    background-size: cover;
 }
 
-
-#pump{
-    position: fixed;
-    margin-top: 33%;
-    margin-left: 29%;
-    width:15%;
+.coinanim{
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    margin-left: 7.3vw;
+    margin-top: 77.5vw;
 }
 
+.cremaillere{
+    position: absolute;
+    width: 14vw;
+    height: 14vw;
+    margin-left: 30vw;
+    margin-top: 18.7vw;
+}
+
+.plexi2{
+    position: absolute;
+    width: 20.2vw;
+    height: 16.5vw;
+    margin-left: 21.3vw;
+    margin-top: 50.4vw;
+}
+
+.plexi3{
+    position: absolute;
+    width: 20.2vw;
+    height: 16.5vw;
+    margin-left: 21.3vw;
+    margin-top: 77.8vw;
+}
 
 /* WARNING MESSAGE */
 .warning {
@@ -232,36 +175,6 @@ canvas {
         -o-transition: background-color ease 0.5s;
         transition: background-color ease 0.5s;
     }
-}
-
-/*panel 1*/
-
-.additionalContentOne{
-    position: absolute;
-    text-align: center;
-
-}
-
-.oneimg{
-    position: relative;
-    width: 33.33%;
-    margin: 0%;
-    padding: 0%;
-    float: left;
-}
-
-.bielle{
-    position: absolute;
-    width: 16.3vw;
-    height: 32.1vw;
-    margin-left: 4.8vw;
-    margin-top: 31.1vw;
-    background-image: url("../media/4.jpg");
-    background-size: cover;
-}
-
-.bielle:hover{
-    background-image: url("../media/5.jpg");
 }
 
 
