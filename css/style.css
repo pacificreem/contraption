@@ -1,0 +1,267 @@
+/*SCROLL*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.panel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+.panel .additionalContent {
+    /*top:0;*/
+    /*position: absolute;*/
+}
+.panel .logo {
+    margin-left: -25%;
+}
+.intro {
+    background-color: red;
+    z-index:0;
+}
+.logo {
+
+    z-index:1;
+}
+.one {
+    background-color: black;
+    z-index:2;
+}
+.two {
+    background-color: pink;
+    z-index:3;
+    overflow: hidden;
+}
+.three {
+    background-color: yellow;
+    z-index:4;
+}
+.four {
+    background-color: lightblue;
+    z-index:5;
+}
+.five {
+    background-color: lightpink;
+    z-index:6;
+}
+.pink {
+    z-index:7;
+}
+.six {
+    background-color: black;
+    z-index:8;
+}
+.seven {
+    background-color: orange;
+    z-index:9;
+}
+.eight {
+    background-color: black;
+    z-index:10;
+    overflow: hidden;
+    background-image: url("../media/original.gif");
+
+}
+.nine {
+    background-color: red;
+    z-index:11;
+}
+.ten {
+    background-color: black;
+    z-index:12;
+}
+.panel > b {
+    font-size: 15px;
+    color: white;
+    position: relative;
+    display: block;
+    height: 0;
+    overflow: visible;
+    top: 50%;
+}
+
+p{
+    color: white;
+}
+
+
+
+/*
+	SCROLL ANIMATIONS GIF
+*/
+#wrapper {
+	height: 100%;
+}
+
+
+
+
+
+.spacer.s0 {
+	min-height: 0px;
+}
+
+.spacer.s2 {
+	min-height: 1000px;
+}
+
+.spacer.s_viewport {
+	min-height: 100%;
+}
+
+.spacer.s_viewport {
+	min-width: 100%;
+}
+
+
+#imagesequence {
+    width: 100%;
+    height: auto;
+    margin-top: -76%;
+    margin-left: -40%;
+    position: fixed;
+}
+
+#myimg{
+    width: 40%;
+    margin-left: 0%;
+    margin-top: -60%;
+    height: auto;
+}
+
+#fimo{
+    width: 30%;
+    margin-top: -40%;
+    height: auto;
+    margin-left: 40%;
+}
+#fimoimg{
+    width: 100%;
+    height: auto;
+    padding: 25%;
+}
+
+#imagesequence2 {
+    margin-top: -1000px;
+    margin-left: -500px;
+    position: fixed;
+}
+
+#myimg2{
+    width: 75%;
+    height: auto;
+}
+
+
+/*GUN*/
+#bg{
+    width: 100%;
+    padding: 0;
+    
+}
+
+.gun{
+    
+    background-size: 100%;
+    padding-bottom: 50%;
+    margin-top: -40%;
+    margin-left: -30%;
+
+    }
+
+
+canvas {
+    position: fixed;
+    padding: 0;
+    width: 100%;
+    }
+
+
+#my-input{
+    position: fixed;
+    margin-top: 23.1%;
+    margin-left: 37%;
+    transform: rotate(-165deg);
+    width: 14%;
+    height: 9%;
+    z-index: 50;
+    opacity: 0;
+    cursor: url("../media/c3b.png") 50 30, auto;
+    }
+
+
+ /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+#my-input:active{ 
+    cursor: url("../media/c4b.png") 50 30, auto;
+}
+
+
+#pump{
+    position: fixed;
+    margin-top: 33%;
+    margin-left: 29%;
+    width:15%;
+}
+
+
+/* WARNING MESSAGE */
+.warning {
+    background: black;
+    position: fixed;
+    z-index: 99;
+    
+}
+@media only screen and (min-width: 1024px) {
+    .warning {
+        z-index: -99;
+    }
+
+    
+
+    .warning {
+        -webkit-transition: background-color ease 0.5s;
+        -moz-transition: background-color ease 0.5s;
+        -ms-transition: background-color ease 0.5s;
+        -o-transition: background-color ease 0.5s;
+        transition: background-color ease 0.5s;
+    }
+}
+
+/*panel 1*/
+
+.additionalContentOne{
+    position: absolute;
+    text-align: center;
+
+}
+
+.oneimg{
+    position: relative;
+    width: 33.33%;
+    margin: 0%;
+    padding: 0%;
+    float: left;
+}
+
+.bielle{
+    position: absolute;
+    width: 16.3vw;
+    height: 32.1vw;
+    margin-left: 4.8vw;
+    margin-top: 31.1vw;
+    background-image: url("../media/4.jpg");
+    background-size: cover;
+}
+
+.bielle:hover{
+    background-image: url("../media/5.jpg");
+}
+
+
