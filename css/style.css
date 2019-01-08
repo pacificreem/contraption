@@ -11,14 +11,17 @@ section {
     text-align: center;
 }
 
-section > b {
-    font-size: 15px;
+section > span {
+    font-size: 25px;
+    text-align: left;
     color: white;
     position: relative;
     display: block;
     height: 0;
+    width: 45vw;
+    margin-left: 27.5vw;
     overflow: visible;
-    top: 50%;
+    top: 40%;
 }
 
 .panel {
@@ -40,15 +43,14 @@ section > b {
     z-index: 10;
 }
 
-.logo div{
-    width: 800px;
-    height: 500px;
-    background-color: red;
+.logo img{
+    width: 50vw;
+    height: 33vw;
     position:absolute;
     top:50%;
     left:50%;
-    margin-left:-400px;/* half width*/
-    margin-top:-250px;
+    margin-left:-25vw;/* half width*/
+    margin-top:-16.5vw;
 
 }
 
@@ -61,7 +63,8 @@ section > b {
     width: 100vw;
     height: 100vw;
     position: absolute;
-    background-image: url("../media/bg.png");
+    background-color: black;
+    background-image: url("../media/bg.gif");
     background-size: cover; 
 }
 
@@ -138,6 +141,13 @@ section > b {
     margin-top: 18.7vw;
 }
 
+.cloth{
+    position: absolute;
+    width: 14vw;
+    margin-left: 15vw;
+    margin-top: 17vw;
+}
+
 .plexi2{
     position: absolute;
     width: 20.2vw;
@@ -156,17 +166,29 @@ section > b {
 
 /* WARNING MESSAGE */
 .warning {
+    width: 100%;
+    height: 100%;
     background: black;
     position: fixed;
     z-index: 99;
-    
+    top: 0;
 }
-@media only screen and (min-width: 1024px) {
+
+.warning > b {
+    font-size: 18px;
+    color: white;
+    position: relative;
+    display: block;
+    height: 0;
+    overflow: visible;
+    top: 50%;
+}
+
+@media only screen and (min-width: 850px) {
     .warning {
         z-index: -99;
     }
 
-    
 
     .warning {
         -webkit-transition: background-color ease 0.5s;
@@ -174,7 +196,9 @@ section > b {
         -ms-transition: background-color ease 0.5s;
         -o-transition: background-color ease 0.5s;
         transition: background-color ease 0.5s;
+
     }
+
 }
 
 
